@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青禾_首页2</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 头部begin -->
+    <header>
+        <img src="./images/logo.png" alt="">
+        <div class="nav">
+            <a class="current" href="./index.html">首页</a>
+            <a href="./about.html">关于</a>
+            <a href="./product.html">产品</a>
+            <a href="./news.html">新闻</a>
+            <a href="./honor.html">荣誉</a>
+            <a href="./contact.html">联系</a>
+            <a href="./service.html">服务</a>
+        </div>
+        
+    </header>
+    <div class="mian">
+        <!-- 轮播图begin -->
+        <div class="focusBox focusBox2">
+            <ul class="pic">
+                <li>
+                    <a href="">
+                        <img src="./images/banner3.png" />
+                    </a>
+                <li>
+                    <a href="">
+                        <img src="./images/banner2.png" />
+                    </a>
+                </li>
+            </ul>
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
+        </div>
+        <div class="i2box1">
+            <div class="list l1">
+                <p class="tit">公司产品</p>
+                <span></span>
+                <p class="en">The products</p>
+                <a href="./product.html"></a>
+            </div>
+            <div class="list l2">
+                <p class="tit">新闻动态</p>
+                <span></span>
+                <p class="en">news</p>
+                <a href="./news.html"></a>
+            </div>
+            <div class="list l3">
+                <p class="tit">公司视频</p>
+                <span></span>
+                <p class="en">Company Video</p>
+                <a href=""></a>
+            </div>
+        </div>
+        <!-- 经典产品 -->
+        <div class="i2box2">
+            <p class="tit">经典产品</p>
+            <p class="en"> Classic products</p>
+            <div class="picScroll">
+                <ul>
+                    <li><a href="vegetables.html"><img src="./images/i2b2i1.png" /></a></li>
+                    <li><a href="vegetables.html"><img src="./images/i2b2i2.png" /></a></li>
+                    <li><a href="vegetables.html"><img src="./images/i2b2i3.png" /></a></li>
+                </ul>
+                <a class="prev" href="javascript:void(0)"></a>
+                <a class="next" href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="link">
+            <div class="list list">
+                <p>关于我们</p>
+                <a href="">青禾简介</a>
+                <a href="">企业文化</a>
+                <a href="">荣誉资质</a>
+                <a href="">社会责任</a>
+                <a href="">创意设计</a>
+            </div>
+            <div class="list list2">
+                <p>新闻动态</p>
+                <a href="">青禾新闻</a>
+                <a href="">展会活动</a>
+                <a href="">媒体报道</a>
+                <a href="">新闻中心</a>
+                <a href="">品牌活动</a>
+            </div>
+            <div class="list list3">
+                <p>快速链接</p>
+                <a href="">产品活动</a>
+                <a href="">服务中心</a>
+                <a href="">经典案例</a>
+                <a href="">行业方案</a>
+                <a href="">联系我们</a>
+            </div>
+            <div class="list list4">
+                <p>关注我们</p>
+                <img src="./images/erweima.jpg" alt="">
+            </div>
+        </div>
+        <div class="contact">
+            <p>24小时服务热线 : 1111111111   111111111111@qq.com</p>
+        </div>
+        <div class="copyright">
+            <p style="float: left;">©  青禾食品有限公司</p>
+            <p style="float: right;"><a href="">法律申明</a>  |  <a href="">网站地图</a></p>
+        </div>
+    </footer>
+</body>
+<script src="./js/jquery1.42.min.js"></script>
+<script src="./js/jquery.SuperSlide.2.1.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    jQuery(".focusBox").slide({ mainCell: ".pic", effect: "fold", interTime: 3000, delayTime: 1500, trigger: "click" });
+    jQuery(".picScroll").slide({ mainCell:"ul", effect:"leftLoop", vis:3, scroll:1,  autoPage:true });
+</script>
+</html>

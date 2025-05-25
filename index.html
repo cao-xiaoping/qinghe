@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青禾_首页1</title>
+<link rel="stylesheet" href="./css/public.css">
+<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<!-- 头部-->
+<header> <img src="./images/logo.png" alt="">
+  <div class="nav"> <a class="current" href="./index2.html">首页</a> <a href="./about.html">关于</a> <a href="./product.html">产品</a> <a href="./news.html">新闻</a> <a href="./honor.html">荣誉</a> <a href="./contact.html">联系</a> <a href="./service.html">服务</a> </div>
+
+</header>
+<div class="mian">
+  <!-- 轮播图-->
+  <div class="focusBox">
+    <ul class="pic">
+      <li> <a href=""> <img src="./images/banner1.png" /> </a>
+      <li> <a href=""> <img src="./images/banner2.png" style="height:auto" /> </a> </li>
+      <li> <a href=""> <img src="./images/banner3.png" /> </a> </li>
+    </ul>
+    <a class="prev" href="javascript:void(0)"></a> <a class="next" href="javascript:void(0)"></a> </div>
+  <!-- 关于我们-->
+  <div class="i1box1">
+    <div class="box">
+      <p class="title">关于我们</p>
+      <div class="con">
+        <p class="en">about</p>
+        <p class="tit">走在健康路上我先驱者</p>
+        <p class="ms"> 集团成立于1962年，前身为宜兰食品工业股份有限公司。1983年创立旺旺品牌，且于90年代初期即赴大陆投资设厂。经过多年的发展，青禾的足迹已经遍布亚洲、非洲、北美洲、中南美洲、大洋洲、欧洲的63个国家和地区。2008年，中国旺旺控股有限公司（股份代号：0000.HK）以食品饮料业务的控股公司正式在香港联合交易所有限公司主板上市。青禾正在不断拓展业务版图，开拓东南亚市场，追求更加多元化的产业合作。青禾集团以“缘、自信、大团结”的经营理念经营各项事业，立志成为“综合消费食品王国”，并向着“中国第一、世界第一”的目标迈进。 </p>
+      </div>
+      <!-- 按钮 -->
+      <a href="./about.html"></a> </div>
+  </div>
+  <!-- 视频部分-->
+  <div class="i1box2">
+    <video preload="auto" controls onloadeddata="vSetImg(this)">
+      <source src="./video/shipin1.mp4">
+    </video>
+    <button></button>
+  </div>
+  <!-- case部分-->
+  <div class="i1box3">
+    <p class="title">Hello!</p>
+    <p class="ms">我们提供最健康的绿色食品</p>
+    <!-- 按钮 -->
+    <a href="./product.html"></a> </div>
+  <!-- 合作伙伴-->
+  <div class="i1box4">
+    <div class="title"><img src="./images/i1b3title.png" alt=""></div>
+    <div class="list"> <a href=""><img class="img1" src="./images/i1b3img1.jpg" alt=""></a> <a href=""><img class="img2" src="./images/i1b3img2.jpg" alt=""></a> <a href=""><img class="img3" src="./images/i1b3img3.png" alt=""></a> </div>
+  </div>
+</div>
+<!-- 底部 -->
+<footer>
+  <div class="link">
+    <div class="list list">
+      <p>关于我们</p>
+      <a href="">青禾简介</a> <a href="">企业文化</a> <a href="">荣誉资质</a> <a href="">社会责任</a> <a href="">创意设计</a> </div>
+    <div class="list list2">
+      <p>新闻动态</p>
+      <a href="">青禾新闻</a> <a href="">展会活动</a> <a href="">媒体报道</a> <a href="">新闻中心</a> <a href="">品牌活动</a> </div>
+    <div class="list list3">
+      <p>快速链接</p>
+      <a href="">产品活动</a> <a href="">服务中心</a> <a href="">经典案例</a> <a href="">行业方案</a> <a href="">联系我们</a> </div>
+    <div class="list list4">
+      <p>关注我们</p>
+      <img src="./images/erweima.jpg" alt=""> </div>
+  </div>
+  <div class="contact">
+    <p>24小时服务热线 : 1111111111   111111111111@qq.com</p>
+  </div>
+  <div class="copyright">
+    <p style="float: left;">©  青禾食品有限公司</p>
+    <p style="float: right;"><a href="">法律申明</a> | <a href="">网站地图</a></p>
+  </div>
+</footer>
+</body>
+<script src="./js/jquery1.42.min.js"></script>
+<script src="./js/jquery.SuperSlide.2.1.js"></script>
+<script src="./js/index.js"></script>
+<script>
+    jQuery(".focusBox").slide({ mainCell: ".pic", effect: "fold", interTime: 3000, delayTime: 1500, trigger: "click" });
+</script>
+</html>
